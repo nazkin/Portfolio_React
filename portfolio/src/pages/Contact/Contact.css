@@ -1,0 +1,12 @@
+.contact {
+    color: linen;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contact-container{
+    background-color: rgb(19, 16, 16, 0.5);
+}
+.contact-body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(19, 16, 16, 0.8);
+    padding: 1.5rem;
+}

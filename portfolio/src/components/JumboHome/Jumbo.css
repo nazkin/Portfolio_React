@@ -1,0 +1,7 @@
+.jumbo{
+    background-color: rgb(10, 8, 8, 0.5);
+    text-align: center;
+    border-bottom: 2px double goldenrod;
+    border-top: 2px double goldenrod;
+    font-weight: 700;
+}

@@ -1,0 +1,40 @@
+.about {
+    color: linen;
+}
+.about-container{
+    border-bottom: 2px double goldenrod;
+    border-top: 2px double goldenrod;
+    background-color: rgb(19, 16, 16, 0.5);
+    font-weight: 700;
+   
+}
+.about-body{
+    margin-top: 2.5rem;
+    background-color: rgb(19, 16, 16, 0.8);
+    border-bottom: 2px double goldenrod;
+    border-top: 2px double goldenrod;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 2px;
+}
+   
+  li {
+    font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+    border-bottom: 1px solid gold;
+    color: lavender;
+    font-style: italic;
+    font-weight: 400;
+  }
+   
+  li:last-child {
+    border: none;
+  }
+   
+  li:hover {
+    font-size: 30px;
+    background: gold;
+    color: darkblue;
+    cursor: zoom-in;
+  }

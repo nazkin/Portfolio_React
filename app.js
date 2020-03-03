@@ -4,7 +4,7 @@ const cors = require('cors');
 const sendGrid = require('@sendgrid/mail');
 const nodemon = require('nodemon');
 const app = express();
-const port = 3000;
+const port = 3030;
 
 app.use(bodyParser.json());
 app.use(cors());
@@ -44,7 +44,7 @@ app.post('/api', (req, res)=> {
 });
 
 app.listen(port,()=> {
-    console.log('Listening on port 3000');
+    console.log('Listening on port 3030');
 });
 
 
