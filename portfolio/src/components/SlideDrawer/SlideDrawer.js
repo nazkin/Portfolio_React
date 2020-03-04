@@ -82,17 +82,6 @@ class SlideDrawer extends Component{
         )
     }
 }
-// const slideDrawer = (props) => {
-//     let drawerClasses = 'side-drawer';
-//     if(props.show){
-//         drawerClasses = 'side-drawer open'
-//     }
-//   return(
-//     <div className={drawerClasses}>
-//         <h1>Hello, I'm sliding!</h1>
-//     </div>
-//    )
 
-//  }
 
 export default SlideDrawer;

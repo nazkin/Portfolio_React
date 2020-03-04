@@ -95,7 +95,7 @@ class Contact extends Component {
                         </Form>
                         </div>
                         <div className="col-4">
-                            <h5 className="my-3">Arrange a meeting in the GTA area</h5>                           
+                            <h5 className="my-3">Arrange a Meeting in the GTA Area</h5>                           
                             <img className="my-3" src="location.png" width="80%" height="auto" />
                             <h5 className="my-3">Toronto / Mississauga / Brampton / Etobicoke</h5>
                             <h6 className="float-left"><img className="contact-icon px-2" src="phone.png" /> 647-804-9890</h6>
