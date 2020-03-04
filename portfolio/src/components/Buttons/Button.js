@@ -7,7 +7,7 @@ import "./Button.css";
 
 const Btn = (props) => {
   return(
-    <div className="btnClass btn1">
+    <div onClick={props.clicked} className="btnClass btn1">
         {props.children}
     </div>
    )

@@ -10,3 +10,32 @@
     border-top: 2px solid goldenrod;
     border-bottom: 2px solid darkcyan;
 }
+
+/* PROJECTS */
+
+.projects-container{
+    background-color: rgb(12, 11, 11, 0.8);
+    margin-top: 1.5rem;
+    border-bottom: 2px double goldenrod;
+    border-top: 2px double goldenrod;
+}
+
+.Projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.Project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:1rem;
+  
+}
+.p-image{
+    width: 60%;
+    height: auto;
+    border: 2px solid linen;
+}

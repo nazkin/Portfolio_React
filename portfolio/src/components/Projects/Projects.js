@@ -4,29 +4,32 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Image from 'react-bootstrap/Image';
 import Btn from '../Buttons/Button';
-import './Projects.css'
+import './Projects.css';
+
 //***************************************/
 // Use img overlay on the cards carousels 
 const projects = (props) => {
+
     return(
+       
         <Container className="projects-container p-4" fluid>
             <Row className="Projects mt-2">
                 <Col md={4} className="Project">
                     <div>
-                    <Btn><img className="mr-2" src="london-eye.png"/>@Backstage</Btn>
+                    <Btn clicked={props.viewProject}><img className="mr-2" src="london-eye.png"/>@Backstage</Btn>
                     </div>
                     <div className="p-image">
                         <Image src="music.jpg" fluid/>
                     </div>
                 </Col>
                 <Col md={4} className="Project">
-                    <Btn><img className="mr-2" src="london-eye.png"/>Study-Camp</Btn>
+                    <Btn clicked={props.viewProject}><img className="mr-2" src="london-eye.png"/>Study-Camp</Btn>
                     <div className="p-image">
                         <Image src="study.jpg" fluid/>
                     </div>
                 </Col>
                 <Col md={4} className="Project">
-                    <Btn><img className="mr-2" src="london-eye.png"/>Sandwich-Shop</Btn>
+                    <Btn clicked={props.viewProject}><img className="mr-2" src="london-eye.png"/>Sandwich-Shop</Btn>
                     <div className="p-image">
                         <Image src="sanwich.jpg" fluid/>
                     </div>
