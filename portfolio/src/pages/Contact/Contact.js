@@ -37,7 +37,10 @@ class Contact extends Component {
             if(result.data.success){
                 this.setState({
                     disabled: false,
-                    emailSent: true
+                    emailSent: true,
+                    name: "",
+                    email: "",
+                    message: ""
                 });    
             }else{
                 this.setState({
