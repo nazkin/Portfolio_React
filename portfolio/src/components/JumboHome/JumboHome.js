@@ -6,8 +6,14 @@ const jumboHome = (props) => {
     return(
         <Container className="jumbo" fluid>
             <Container className="border-top border-dark p-3">
-                <h1 className="d-flex justify-content-start">{props.titleHome}</h1>
-                <h2 className="d-flex justify-content-end mt-3">{props.subtitleHome}</h2>
+                <div className="row">
+                    <div className="col-md-6">
+                        <img src="Naz.png" />
+                    </div>
+                    <div className="col-md-6">
+                    <h1 className="d-flex justify-content-start">{props.titleHome}</h1>
+                    </div>
+                </div>    
             </Container>
         </Container> 
 

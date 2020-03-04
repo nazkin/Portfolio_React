@@ -23,23 +23,23 @@ const about = (props)=> {
                    
                 
             </Container>
-            <Container className="about-body">
-                <Row className="my-3" >
-                    <Col  sm={4}>
-                        <h3 className="mb-3 border-bottom">Skills & Technologies</h3>
+            <Container className="about-body" fluid>
+                <Row className="my-3 d-flex flex-row justify-content-around align-items-center" >
+                    <Col className="about-skills"  sm={4}>
+                        <h3 className="mb-3 about-titles">Skills & Technologies</h3>
                         <ul className="skills-list">
                             <li><span className="float-left mx-4"><img src="correct.png" alt="checkmark icon"/></span>HTML5/CSS</li>
-                            <li><span className="float-left mx-4"><img src="correct.png" alt="checkmark icon"/></span>JavaScript</li>
+                            <li>JavaScript<span className="mx-4 float-right"><img src="news.png" /></span></li>
                             <li><span className="float-left mx-4"><img src="correct.png" alt="checkmark icon"/></span>jQuery</li>
-                            <li><span className="float-left mx-4"><img src="correct.png" alt="checkmark icon"/></span>Node</li>
+                            <li>Node<span className="mx-4 float-right"><img src="news.png" /></span></li>
                             <li><span className="float-left mx-4"><img src="correct.png" alt="checkmark icon"/></span>Express</li>
-                            <li><span className="float-left mx-4"><img src="correct.png" alt="checkmark icon"/></span>Handlebars/EJS</li>
+                            <li>Handlebars/EJS<span className="mx-4 float-right"><img src="news.png" /></span></li>
                             <li><span className="float-left mx-4"><img src="correct.png" alt="checkmark icon"/></span>MongoDB/mySQL</li>
-                            <li><span className="float-left mx-4"><img src="correct.png" alt="checkmark icon"/></span>React/Redux</li>
+                            <li>React/Redux<span className="mx-4 float-right"><img src="news.png" /></span></li>
                         </ul>
                     </Col>
-                    <Col  sm={4}>
-                        <h3 className="mb-3 border-bottom">Professional Timeline</h3>
+                    <Col className="about-life" sm={6}>
+                        <h3 className="my-3 about-titles">Professional Timeline</h3>
                         <p>-> This is where I developed my passion for coding throught the Bioinformatics classes
                             that I took during this period of time. 
                            -> Shortly after I began coding on my own, taking various courses to help me understand 
@@ -51,18 +51,14 @@ const about = (props)=> {
                             -> Resume
                             -> GitHub
                         </div>
-                    </Col>
-                    <Col sm={4}>
-                    <h3 className="mb-3 border-bottom">Lifestyle</h3>
-                        <ul>
-                            <h4>Boxing since I was 8 years old</h4>
-                            <h4>Passionate Cook</h4>
-                            <h4>Interested in Human Pyschology</h4>
-                            <h4>Involved in Big Brother Not-for-profit</h4>
-                        </ul>
+                        <h3 className="my-3 about-titles">Lifestyle & Interests</h3>
+                            <h5>Boxing/MMA</h5>
+                            <h5>Cooking and Gardening</h5>
+                            <h5>Human Pyschology & Stoic Phylosophy</h5>
+                            <h5>Favorite Book: "Crime and Punishment"</h5>
+                            <h5>Favorite Movie: "What Do Women Want"</h5>
                     </Col>
                 </Row>
-
             </Container>
 
         </div>

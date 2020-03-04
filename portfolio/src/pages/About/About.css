@@ -13,11 +13,23 @@
     background-color: rgb(19, 16, 16, 0.8);
     border-bottom: 2px double goldenrod;
     border-top: 2px double goldenrod;
+    font-weight: 400;
+}
+.about-skills{
+ font-weight: 400;
+ 
+}
+.about-titles{
+  color: lavender;
+  font-weight: 700;
+}
+.about-life{
+  border-left: 2px solid goldenrod;
 }
 ul{
     list-style-type: none;
-    margin: 0;
-    padding: 2px;
+    margin: 0px;
+    padding:0px;
 }
    
   li {
@@ -26,6 +38,7 @@ ul{
     color: lavender;
     font-style: italic;
     font-weight: 400;
+    padding: 0.5rem;
   }
    
   li:last-child {

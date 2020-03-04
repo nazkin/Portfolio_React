@@ -6,9 +6,8 @@ import './HomePage.css'
 const homePage = (props)=> {
     return(
         <div className="home">
-            <JumboHome subtitleHome = {props.subtitle}
-                         titleHome  = {props.title}/>
-           
+            <JumboHome titleHome  = {props.title}/>
+            <h2 className="mt-3 subtitle">{props.subtitle}</h2>
            <Projects />
         </div>
     );

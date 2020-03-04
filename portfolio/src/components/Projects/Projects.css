@@ -1,6 +1,6 @@
 .projects-container{
     background-color: rgb(12, 11, 11, 0.8);
-    margin-top: 5rem;
+    margin-top: 1.5rem;
     border-bottom: 2px double goldenrod;
     border-top: 2px double goldenrod;
 }
@@ -16,6 +16,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top:1rem;
   
 }
 .p-image{

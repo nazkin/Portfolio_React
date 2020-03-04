@@ -6,7 +6,7 @@ import {
   Link,
   useParams
 } from "react-router-dom";
-import Button from 'react-bootstrap/Button';
+
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 
@@ -38,7 +38,7 @@ class App extends Component {
     title: "Leave your info, Let's Chat"
   }, 
   home: {
-    title: "Every Project ... Every Detail ... Every Time !!!",
+    title: "Everything I Do Matters Every Project ... Every Detail ... Every Time !!!",
     subtitle: "Making a Difference 1 Project At a Time..."
   }
 };
@@ -47,7 +47,7 @@ class App extends Component {
     return (
       <div className="App">
         <Router>
-          <Navbar className="border-bottom mb-3" bg="secondary" expand="md">
+          <Navbar className="border-bottom mb-3" variant="dark" bg="dark" expand="md">
             <Navbar.Brand href="#home">Nazar's</Navbar.Brand>
             <Navbar.Toggle aria-controls="toggle-navbar" />
             <Navbar.Collapse id="toggle-navbar">

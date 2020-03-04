@@ -13,20 +13,20 @@ const projects = (props) => {
             <Row className="Projects mt-2">
                 <Col md={4} className="Project">
                     <div>
-                    <Btn>Meet<img src="london-eye.png"/>Backstage</Btn>
+                    <Btn><img className="mr-2" src="london-eye.png"/>@Backstage</Btn>
                     </div>
                     <div className="p-image">
                         <Image src="music.jpg" fluid/>
                     </div>
                 </Col>
                 <Col md={4} className="Project">
-                    <Btn>Study<img src="london-eye.png"/>Camp</Btn>
+                    <Btn><img className="mr-2" src="london-eye.png"/>Study-Camp</Btn>
                     <div className="p-image">
                         <Image src="study.jpg" fluid/>
                     </div>
                 </Col>
                 <Col md={4} className="Project">
-                    <Btn>Sandwich<img src="london-eye.png"/>Shop</Btn>
+                    <Btn><img className="mr-2" src="london-eye.png"/>Sandwich-Shop</Btn>
                     <div className="p-image">
                         <Image src="sanwich.jpg" fluid/>
                     </div>
