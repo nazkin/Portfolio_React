@@ -5,10 +5,13 @@ const sendGrid = require('@sendgrid/mail');
 const nodemon = require('nodemon');
 const app = express();
 const port = 3030;
+var compression = require('compression');
+const dotenv = require('dotenv');
+dotenv.config();
 
 app.use(bodyParser.json());
 app.use(cors());
-
+app.use(compression());
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, PATCH, DELETE');
@@ -21,7 +24,8 @@ app.get('/api',(req, res)=>{
 });
 
 app.post('/api', (req, res)=> {
-    const apiKey = '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';
+    
+    const apiKey = process.env.API_KEY;
     sendGrid.setApiKey(apiKey); //could cause problems
     const msg = {
         to: 'nazar.kinash93@gmail.com',

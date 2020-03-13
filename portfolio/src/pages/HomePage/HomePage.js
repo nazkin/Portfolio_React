@@ -79,7 +79,7 @@ class HomePage extends Component {
                             </div>
                         </Col>
                         <Col md={4} className="Project">
-                            <Btn clicked={this.drawerToggleClickHandlerTwo}><img className="mr-2" src="london-eye.png"/>Study-Camp</Btn>
+                            <Btn clicked={this.drawerToggleClickHandlerTwo}><img className="mr-2" src="london-eye.png"/>Live Chatroom</Btn>
                             <div className="p-image">
                                 <Image src="study.jpg" fluid/>
                             </div>
