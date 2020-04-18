@@ -2,8 +2,10 @@
   "name": "portfolio_api",
   "version": "1.0.0",
   "description": "\"My first portfolio using react\"",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
+    "start": "node server.js",
+    "heroku-postbuild": "cd portfolio && npm install && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Naz (2019)",

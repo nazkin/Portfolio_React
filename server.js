@@ -1,10 +1,10 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const path = require("path");
 const cors = require('cors');
 const sendGrid = require('@sendgrid/mail');
-const nodemon = require('nodemon');
 const app = express();
-const port = 3030;
+const port = process.env.port || 3030;
 var compression = require('compression');
 const dotenv = require('dotenv');
 dotenv.config();
@@ -12,11 +12,20 @@ dotenv.config();
 app.use(bodyParser.json());
 app.use(cors());
 app.use(compression());
+// app.use(express.urlencoded({extended: true}));
+// app.use(express.json());
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, PATCH, DELETE');
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
     next();
+});
+//For heroku deployment
+if(process.env.NODE_ENV === 'production'){
+    app.use(express.static("portfolio/build"));
+}
+app.use((req, res)=> {
+    res.sendFile(path.join(__diirname, "../portfolio/build/index.html"))
 });
 
 app.get('/api',(req, res)=>{
